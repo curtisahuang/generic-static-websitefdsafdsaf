@@ -3,16 +3,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Static Site</title>
+  <title>Flapjacks — Recipes, History, Tips</title>
+  <meta name="description" content="Flapjacks explained: UK oat-bar flapjacks vs US pancake flapjacks. Clear recipes, tips, and FAQs." />
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+  <header>
+    <div class="container header-inner">
+      <a class="brand" href="#">Flapjacks</a>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#tips">Tips</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <h1>Welcome to Your Static Site</h1>
+    <section class="hero">
+      <h1>Flapjacks</h1>
+      <p class="sub">The ultimate guide to UK oat bars and US pancakes.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#recipe-uk">UK Oat-Bar Recipe</a>
+        <a class="btn btn-secondary" href="#recipe-us">US Pancake Recipe</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>What is a “flapjack”?</h2>
+      <p>
+        “Flapjack” means different things depending on where you are:
+      </p>
+      <div class="grid two">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=1200&q=80&auto=format&fit=crop" alt="Golden oat bar flapjacks on a plate" />
+          <h3>UK: Oat-Bar Flapjack</h3>
+          <p>
+            A chewy, buttery tray-bake made from oats, butter, brown sugar, and golden syrup (or honey).
+          </p>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=1200&q=80&auto=format&fit=crop" alt="Stack of American pancakes with maple syrup" />
+          <h3>US: Pancake “Flapjack”</h3>
+          <p>
+            A fluffy griddled pancake, often served in stacks with butter and maple syrup. Light and airy inside.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="recipes" class="section">
+      <h2>Recipes</h2>
+
+      <div class="tabs" role="tablist" aria-label="Recipe tabs">
+        <button class="tab active" role="tab" aria-selected="true" aria-controls="panel-uk" id="tab-uk" data-tab="uk">UK Oat-Bar</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-us" id="tab-us" data-tab="us">US Pancake</button>
+      </div>
+
+      <div class="tab-panels">
+        <div class="tab-panel active" role="tabpanel" id="panel-uk" aria-labelledby="tab-uk" data-panel="uk">
+          <article class="recipe" id="recipe-uk">
+            <h3>Classic UK Flapjack (Oat Bar)</h3>
+            <p class="meta">Prep 10 min • Bake 20–25 min • Makes 12 bars</p>
+            <div class="grid two">
+              <div>
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>200 g unsalted butter</li>
+                  <li>150 g light brown sugar</li>
+                  <li>150 g golden syrup (or honey)</li>
+                  <li>350 g rolled oats</li>
+                  <li>Pinch of salt</li>
+                  <li>Optional: 1 tsp vanilla, handful of dried fruit or chocolate chips</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Method</h4>
+                <ol>
+                  <li>Heat oven to 180°C (160°C fan) / 350°F. Line a 20×20 cm (8×8 in) tin with parchment.</li>
+                  <li>Melt butter, sugar and syrup together in a saucepan over low heat; stir until dissolved.</li>
+                  <li>Off heat, stir in oats and salt until evenly coated. Fold in any optional add-ins.</li>
+                  <li>Press mixture into tin. Bake 20–25 min until edges are golden.</li>
+                  <li>Cool in tin. Slice into bars while slightly warm for cleaner edges.</li>
+                </ol>
+              </div>
+            </div>
+            <p class="tip">For chewier bars, bake less; for crisper ones, bake a bit longer.</p>
+          </article>
+        </div>
+
+        <div class="tab-panel" role="tabpanel" id="panel-us" aria-labelledby="tab-us" data-panel="us">
+          <article class="recipe" id="recipe-us">
+            <h3>Buttermilk Pancakes (US “Flapjacks”)</h3>
+            <p class="meta">Prep 10 min • Cook 15 min • Serves 3–4</p>
+            <div class="grid two">
+              <div>
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>240 g (2 cups) all-purpose flour</li>
+                  <li>2 tbsp sugar</li>
+                  <li>2 tsp baking powder</li>
+                  <li>1/2 tsp baking soda</li>
+                  <li>1/2 tsp fine salt</li>
+                  <li>480 ml (2 cups) buttermilk</li>
+                  <li>2 large eggs</li>
+                  <li>45 g (3 tbsp) melted butter, plus more for the pan</li>
+                  <li>Optional: 1 tsp vanilla</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Method</h4>
+                <ol>
+                  <li>Whisk dry ingredients in a bowl. In another, whisk buttermilk, eggs, and melted butter.</li>
+                  <li>Combine wet into dry, stirring just until flour disappears (lumpy batter is fine).</li>
+                  <li>Heat a lightly buttered skillet over medium. Pour 1/4 cup portions.</li>
+                  <li>Cook until bubbles form and edges set; flip and cook until golden.</li>
+                  <li>Serve with butter and warm maple syrup. Add berries or chocolate chips if you like.</li>
+                </ol>
+              </div>
+            </div>
+            <p class="tip">Resting the batter 5–10 minutes improves fluffiness.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips" class="section">
+      <h2>Tips</h2>
+      <ul class="tips">
+        <li>Use rolled oats (not instant) for UK flapjacks; they hold their bite.</li>
+        <li>Golden syrup gives classic flavor; honey works but is less toffee‑like.</li>
+        <li>For pancakes, don’t overmix. Small lumps prevent toughness.</li>
+        <li>Control heat: medium for even browning without burning.</li>
+        <li>Weigh ingredients for consistency.</li>
+      </ul>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Are UK flapjacks gluten‑free?</summary>
+        <p>Use certified gluten‑free oats and check all labels. Standard oats can be cross‑contaminated.</p>
+      </details>
+      <details>
+        <summary>Can I replace buttermilk?</summary>
+        <p>Yes: 2 cups whole milk + 2 tbsp lemon juice or vinegar; rest 5–10 minutes.</p>
+      </details>
+      <details>
+        <summary>How do I store flapjack bars?</summary>
+        <p>Airtight container at room temperature 3–4 days, or freeze up to 3 months.</p>
+      </details>
+    </section>
   </main>
+
   <footer>
-    <p>&copy; 2025 Your Name</p>
+    <p>&copy; 2025 Flapjacks</p>
   </footer>
+
   <script src="assets/script.js"></script>
 </body>
 </html>
