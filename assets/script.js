@@ -21,5 +21,5 @@ document.addEventListener("DOMContentLoaded", () => {
   if (location.hash === "#recipe-us") activate("us");
   else activate("uk");
 
-  console.log("Flapjacks site loaded");
+  console.log("Smash Burgers site loaded");
 });
